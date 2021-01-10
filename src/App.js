@@ -1,7 +1,8 @@
-import React from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
-import './App.css';
-import LoginHeader from './Components/LoginHeader';
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
+import Login from "./Components/Login";
+import LoginHeader from "./Components/LoginHeader";
 
 function App() {
   return (
@@ -9,7 +10,8 @@ function App() {
       <Router>
         <Switch>
           <Route path="/login">
-            <LoginHeader/>
+            <LoginHeader />
+            <Login />
           </Route>
         </Switch>
       </Router>
